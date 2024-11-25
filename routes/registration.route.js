@@ -6,13 +6,13 @@ const registrationController = require("../controllers/registration.controller")
 const router = express.Router();
 
 router.post(
-  "/:eventId",
+  "/register/:eventId",
   authorize("register-event"),
   registrationController.registerEvent
 );
 
 router.delete(
-  "/cancel/:registrationId",
+  "/register/cancel/:registrationId",
   registrationController.cancelEventRegistration
 );
 

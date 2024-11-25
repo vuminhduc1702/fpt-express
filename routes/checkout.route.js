@@ -4,6 +4,6 @@ const checkoutController = require("../controllers/checkout.controller");
 
 const router = express.Router();
 
-router.post("/", checkoutController.checkout);
+router.post("/checkout", checkoutController.checkout);
 
 module.exports = router;

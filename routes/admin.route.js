@@ -6,19 +6,19 @@ const adminController = require("../controllers/admin.controller");
 const router = express.Router();
 
 router.get(
-  "/analytics/overview/:eventId",
+  "/admin/analytics/overview/:eventId",
   authorize("analytic"),
   adminController.overview
 );
 
 router.get(
-  "/analytics/top-events",
+  "/admin/analytics/top-events",
   authorize("analytic"),
   adminController.topEvent
 );
 
 router.get(
-  "/analytics/user-activity/:userId",
+  "/admin/analytics/user-activity/:userId",
   authorize("analytic"),
   adminController.userActivity
 );
